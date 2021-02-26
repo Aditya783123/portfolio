@@ -1,0 +1,76 @@
+
+/*used to style anything that has h1 tag*/
+h1{
+    color:#72ad24;
+
+    /*padding is used to give space between div and element*/
+    padding-left:30px;
+}
+
+/*To style a div you have to use a dot before the name*/
+.header{
+    background-color:#578675;
+    /*Flex display is used to arrange divs horizontally or vertically*/
+    display:flex;
+
+    /*to keep as much space as possible between sub divs*/
+    justify-content: space-between;
+}
+
+
+
+
+.grid{
+    display:flex;
+   
+    /*To keep even space between all sub divs*/
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+/*alink is used to customize the style of links before they are clicked on*/
+a:link{
+    color:white;
+}
+
+/*avisited is used to customize the style of the links that are clicked on*/
+a:visited{
+    color:white;
+}
+.item{
+    /*used to define a relative position to other elements*/
+    position:relative;
+}
+/*this style will only be applied to the p tag in the item div*/
+.item p{
+    /*used to define a fixed, or absolute position*/
+    position:absolute;
+    /*used to change the position of the text*/
+    top:50%;
+    left:50%;
+    /*used to translate text to start so the entire text is centered*/
+    transform:translate(-50%, -50%);
+    /*used to make invisible*/
+    opacity:0;
+}
+/*when mouse hovers on p tag in item div, the text will be visible*/
+.item:hover p{
+    opacity:1;
+}
+/*when mouse hovers on img tag in item div, the image will be less visible*/
+.item:hover img{
+    opacity:0.33;
+}
+
+.menu{
+    margin-right:30px;
+    padding-top:30px;
+}
+.menu a{
+    margin-left:20px;
+}
+.footer{
+    display:flex;
+
+    /*Used to keep divs exactly at the end*/
+    justify-content: flex-end
+}
